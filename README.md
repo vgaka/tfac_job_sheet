@@ -1,2 +1,3 @@
-# tfac_job_sheet
-extract table from job sheet of tfac
+# extract data from tfac sheet
+create array by extract noly data from tfac job sheet
+
