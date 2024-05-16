@@ -1,0 +1,16 @@
+const table = document.querySelector("div.table-responsive");
+const header = table.getElementsByTagName("thead")[0].getElementsByTagName('th');
+const data = table.getElementsByTagName("tbody")[0].getElementsByTagName('tr');
+function getrows(data){
+    const myrows = [];
+    for (i of data){
+        const r = i.innerText.replaceAll("\n",'').split('\t').map(col => {
+    return col})
+        myrows.push(r);
+    }
+    return myrows;
+}
+
+// apply by function getrows 
+const mytextdata = getrows(data);
+console.log(mytextdata);
